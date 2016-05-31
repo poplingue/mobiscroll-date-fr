@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Mobiscroll</title>
+  <!-- jQuery Include -->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Mobiscroll JS and CSS Includes -->
+  <script src="js/mobiscroll.core.js"></script>
+  <script src="js/mobiscroll.frame.js"></script>
+  <script src="js/mobiscroll.scroller.js"></script>
+  <script src="js/mobiscroll.util.datetime.js"></script>
+  <script src="js/mobiscroll.datetimebase.js"></script>
+  <script src="js/mobiscroll.datetime.js"></script>
+  <script src="js/i18n/mobiscroll.i18n.fr.js"></script>
+  <link href="css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: arial, verdana, sans-serif;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: .625em;
+    margin: 0 0 .625em 0;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  .header {
+    padding: .625em;
+    background: #5185a8;
+  }
+  
+  .header h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .content {
+    padding: 1em;
+  }
+  </style>
+  <script>
+  $(function() {
+    function init() {
+      // Date demo initialization
+      $('#demo_date').mobiscroll().date({
+        mode: 'scroller', // Specify scroller mode like: mode: 'mixed' or omit setting to use default 
+        display: 'inline', // Specify display mode like: display: 'bottom' or omit setting to use default 
+        lang: 'fr' // Specify language like: lang: 'pl' or omit setting to use default 
+      });
+    }
+    init();
+  });
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Mobiscroll</h1>
+  </div>
+  <div class="content">
+    <div data-role="fieldcontain" class="demo-cont" id="demo_cont_date">
+      <label for="demo_date">Try Date</label>
+      <input type="text" id="demo_date" />
+    </div>
+  </div>
+</body>
+
+</html>
