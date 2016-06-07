@@ -1,0 +1,24 @@
+{
+  "name": "perinat-ember",
+  "version": "0.0.1",
+  "description": "mobiscroll date FR",
+  "private": false,
+  "directories": {
+    
+  },
+  "scripts": {
+    
+  },
+  "repository": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+    
+  }
+}
